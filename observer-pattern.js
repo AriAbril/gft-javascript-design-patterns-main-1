@@ -92,6 +92,17 @@ const Enviar=()=>{
         div.appendChild(muestra_mensaje);
         papa.appendChild(div);
         abuelo.appendChild(papa);
+
+    // Se muestran las notificaciones
+    var user = document.getElementById('contusuario');
+    var noti = document.createElement('div');
+    noti.className = 'notify';
+    noti.id = 'notify';
+    var num = document.createElement('h4');
+    num.innerHTML = "";
+
+    noti.appendChild(num);
+    user.appendChild(noti);
 }
 
 
